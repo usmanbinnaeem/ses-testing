@@ -53,7 +53,7 @@ export class SimpleEmailServiceStack extends cdk.Stack {
     //rule for receiptEmailRuleSet
 
     ruleset.addRule("Invoke_Lambda", {
-      recipients: ["usmaanbinnaeem@gmail.com"],
+      recipients: ["support@usmannaeem.tk"],
       actions: [
         new actions.Lambda({
           function: actionLambda,
@@ -64,7 +64,7 @@ export class SimpleEmailServiceStack extends cdk.Stack {
     });
 
     ruleset.addRule("SAVE_EMAILS_IN_S3_BUCKET", {
-      recipients: ["usmaanbinnaeem@gmail.com"],
+      recipients: ["support@usmannaeem.tk"],
       actions: [
         new actions.S3({
           bucket,
